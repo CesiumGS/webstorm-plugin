@@ -1,0 +1,19 @@
+<idea-plugin version="2">
+  <id>jss.JumpSourceSpec</id>
+  <name>Jump Source Spec</name>
+  <version>1.0</version>
+  <vendor email="tpedbereznak@agi.com" url="http://www.agi.com">Analytical Graphics Inc</vendor>
+  <description><![CDATA[Easy to swap between source and test file.]]></description>
+  <change-notes><![CDATA[]]>
+  </change-notes>
+  <idea-version since-build="141.0"/>
+  <depends>com.intellij.modules.lang</depends>
+  <extensions defaultExtensionNs="com.intellij"></extensions>
+  <actions>
+    <action id="jss.JumpSourceSpec" class="JumpSourceSpec" text="Jump Source Spec"
+            description="Easily jump from source to spec file, or visa versa.">
+      <add-to-group group-id="ToolsMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="control shift J"/>
+    </action>
+  </actions>
+</idea-plugin>
