@@ -13,7 +13,7 @@
     <action id="jss.JumpSourceSpec" class="JumpSourceSpec" text="Jump Source Spec"
             description="Easily jump from source to spec file, or visa versa.">
       <add-to-group group-id="ToolsMenu" anchor="first"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="control shift J"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt shift K"/>
     </action>
   </actions>
 </idea-plugin>
