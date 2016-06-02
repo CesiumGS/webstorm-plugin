@@ -5,7 +5,7 @@ import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.fileEditor.ex.FileEditorManagerEx
 import com.intellij.openapi.vfs.LocalFileSystem
 
-import java.io.*
+import java.io.File
 
 final class JumpSourceSpec : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
