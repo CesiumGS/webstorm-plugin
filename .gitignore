@@ -1,3 +1,4 @@
-.idea/
+.idea/*.xml
+.idea/copyright
 out/
 cesium-webstorm-plugin.jar
