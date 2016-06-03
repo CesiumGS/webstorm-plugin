@@ -1,5 +1,5 @@
-# cesium-webstorm-plugin
+# Cesium WebStorm Plugin
 
-[Download the plugin](https://plugins.jetbrains.com/plugin/8388?pr=).
+[Download the plugin](https://plugins.jetbrains.com/plugin/8391?pr=).
 
-With this plugin, you can swap between `Source` files and `Spec` files with a simple key macro.
+With this plugin, you can jump between source and specs files with a simple press of `alt + shift + k`.

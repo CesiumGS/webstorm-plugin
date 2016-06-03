@@ -4,10 +4,10 @@ import com.intellij.openapi.fileEditor.FileDocumentManager
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.fileEditor.ex.FileEditorManagerEx
 import com.intellij.openapi.vfs.LocalFileSystem
-
 import java.io.File
 
 final class JumpSourceSpec : AnAction() {
+
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: return
         val fileEditorManager = FileEditorManagerEx.getInstanceEx(project)
