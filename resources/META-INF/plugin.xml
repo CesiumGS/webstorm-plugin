@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>jss.JumpSourceSpec</id>
   <name>Jump Source Spec</name>
-  <version>1.0</version>
+  <version>1.0.2</version>
   <vendor email="tpedbereznak@agi.com" url="http://www.agi.com">Analytical Graphics Inc</vendor>
   <description><![CDATA[Easy to swap between source and test file.]]></description>
   <change-notes><![CDATA[]]>
