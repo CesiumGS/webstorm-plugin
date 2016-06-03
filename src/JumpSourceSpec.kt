@@ -21,8 +21,22 @@ final class JumpSourceSpec : AnAction() {
             val newVirtualFile = LocalFileSystem.getInstance().findFileByIoFile(File(newFilePath)) ?: return
             fileEditorManager.closeFile(oldVirtualFile)
             fileEditorManager.openFile(newVirtualFile, true)
+        } else if (oldFilePath.contains("lib") && !oldFilePath.contains("Spec")) {
+            var newFilePath = oldFilePath.replace("lib", "specs/lib")
+            newFilePath = newFilePath.substring(7, newFilePath.length - 3) + "Spec" + newFilePath.substring(newFilePath.length - 3, newFilePath.length)
+            println(newFilePath)
+            println(oldFilePath)
+            val newVirtualFile = LocalFileSystem.getInstance().findFileByIoFile(File(newFilePath)) ?: return
+            fileEditorManager.closeFile(oldVirtualFile)
+            fileEditorManager.openFile(newVirtualFile, true)
         } else if (oldFilePath.contains("Specs")) {
             var newFilePath = oldFilePath.replace("Specs", "Source")
+            newFilePath = newFilePath.substring(7, newFilePath.length - 7) + "" + newFilePath.substring(newFilePath.length - 3, newFilePath.length)
+            val newVirtualFile = LocalFileSystem.getInstance().findFileByIoFile(File(newFilePath)) ?: return
+            fileEditorManager.closeFile(oldVirtualFile)
+            fileEditorManager.openFile(newVirtualFile, true)
+        } else if (oldFilePath.contains("specs/lib")) {
+            var newFilePath = oldFilePath.replace("specs/lib", "lib")
             newFilePath = newFilePath.substring(7, newFilePath.length - 7) + "" + newFilePath.substring(newFilePath.length - 3, newFilePath.length)
             val newVirtualFile = LocalFileSystem.getInstance().findFileByIoFile(File(newFilePath)) ?: return
             fileEditorManager.closeFile(oldVirtualFile)
